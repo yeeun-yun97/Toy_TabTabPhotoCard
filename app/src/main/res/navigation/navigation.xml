@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_pickPhotoFragment"
+            app:destination="@id/pickPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickPhotoFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.PickPhotoFragment"
+        android:label="PickPhotoFragment" >
+        <action
+            android:id="@+id/action_pickPhotoFragment_to_writeMessageFragment"
+            app:destination="@id/writeMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeMessageFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.WriteMessageFragment"
+        android:label="WriteMessageFragment" />
+    <fragment
+        android:id="@+id/collectionFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.CollectionFragment"
+        android:label="CollectionFragment" >
+        <action
+            android:id="@+id/action_collectionFragment_to_viewPostCardFragment"
+            app:destination="@id/viewPostCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postBoxFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.PostBoxFragment"
+        android:label="PostBoxFragment" >
+        <action
+            android:id="@+id/action_postBoxFragment_to_openPostCardFragment"
+            app:destination="@id/openPostCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPostCardFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.ViewPostCardFragment"
+        android:label="ViewPostCardFragment" />
+    <fragment
+        android:id="@+id/openPostCardFragment"
+        android:name="com.github.yeeun_yun97.toy.tabtabphotocard.ui.OpenPostCardFragment"
+        android:label="OpenPostCardFragment" />
+</navigation>
