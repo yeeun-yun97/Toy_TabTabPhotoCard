@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "TabTabPhotocard"
-include ':app'
+include ':presentation'
+include ':domain'
+include ':data'
