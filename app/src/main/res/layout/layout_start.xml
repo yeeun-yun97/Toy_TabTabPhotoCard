@@ -40,7 +40,8 @@
         app:layout_constraintGuide_begin="598dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nextTextView"
+        style="@style/important2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="탭탭포토"

@@ -1,10 +1,12 @@
 package com.github.yeeun_yun97.toy.tabtabphotocard.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
@@ -26,6 +28,11 @@ class StartFragment : Fragment() {
        val navController = NavHostFragment.findNavController(this)
         button.setOnClickListener {
             navController.navigate(R.id.action_startFragment_to_pickPhotoFragment)
+        }
+        val textView = view.findViewById<TextView>(R.id.nextTextView)
+        textView.setOnClickListener {
+            val intent = Intent(this@StartFragment.context,ComposeActivity::class.java)
+            startActivity(intent)
         }
 
     }
